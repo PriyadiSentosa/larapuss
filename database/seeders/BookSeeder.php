@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Author;
-use App\Models\book;
+use App\Models\Book;
 
 class BookSeeder extends Seeder
 {
@@ -17,8 +17,8 @@ class BookSeeder extends Seeder
     {
         // Membuat sample penulis
         $author1 = Author::create(['name'=>'Rahmat Awaludin']);
-        $author1 = Author::create(['name'=>'Nadhi A Tsana']);
-        $author1 = Author::create(['name'=>'Takdir A Ridwan']);
+        $author2 = Author::create(['name'=>'Nadhi A Tsana']);
+        $author3 = Author::create(['name'=>'Takdir A Ridwan']);
 
         // Membuat sample book
         $book1 = Book::create(['title'=>'Seminggu Belajar Laravel',
