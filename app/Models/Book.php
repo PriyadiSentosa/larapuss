@@ -19,7 +19,7 @@ class Book extends Model
     {
         // data Model 'Book' bisa dimiliki oleh Model "Author"
         // melalui fk "author_id"
-        return $this->belongsTo('App\Models\Book', 'author_id');
+        return $this->belongsTo('App\Models\Author', 'author_id');
     }
 
     public function image()
